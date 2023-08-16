@@ -22,7 +22,7 @@
       </div>
     </div>
     <script>
-    var countDownDate = new Date("August 16, 2023 00:00:00").getTime();
+    var countDownDate = new Date("August 16, 2023 00:16:00").getTime();
     var countdownfunction = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -33,7 +33,6 @@
     document.getElementById("dayleft").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       if (distance < 0) {
         clearInterval(countdownfunction);
-        window.location.href = "../index.html";
       }
     }, 1000);
     </script>
